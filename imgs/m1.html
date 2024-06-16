@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer in Object Detection</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .image {
+            width: 100%;
+            height: auto;
+        }
+        .highlight {
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .position-encoding {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .multi-head {
+            background-color: lightcoral;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .output {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Feature Extraction and Positional Encoding -->
+    <div class="section">
+        <h3>Хребет множиня ознак</h3>
+        <div class="highlight">ЗНМ</div>
+        <div class="position-encoding">Позиційне кодування</div>
+    </div>
+
+    <!-- Transformer Encoder -->
+    <div class="section">
+        <h3>Кодер Трансформер</h3>
+        <img src="transformer_encoder.png" alt="Transformer Encoder" class="image">
+    </div>
+
+    <!-- Transformer Decoder -->
+    <div class="section">
+        <h3>Декодер Трансформер</h3>
+        <img src="transformer_decoder.png" alt="Transformer Decoder" class="image">
+        <div class="multi-head">НМПП</div>
+        <div class="multi-head">НМПП</div>
+        <div class="multi-head">НМПП</div>
+        <div class="multi-head">НМПП</div>
+    </div>
+
+    <!-- Output -->
+    <div class="section output">
+        <h3>Клас та коробка</h3>
+        <img src="output_image.png" alt="Output" class="image">
+        <div class="multi-head">клас, коробка</div>
+        <div class="multi-head">нема об'єкту</div>
+        <div class="multi-head">клас, коробка</div>
+        <div class="multi-head">нема об'єкту</div>
+    </div>
+</div>
+
+</body>
+</html>
